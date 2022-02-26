@@ -2,6 +2,6 @@
 
 <h4 align="center">
 
-[![Deploy+On+Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Unknownvip/hero
+[![Deploy+On+Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Unknownvip/hero)
 # 
 THIS IS THE MODIFIED VERSION OF YUKKI MUSIC, IT HAVE MANY MORE FEATURES THEN YUKKI. 
