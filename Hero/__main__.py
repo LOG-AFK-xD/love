@@ -82,31 +82,31 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]ᴄᴏɴɢʀᴀᴛs ʜᴇʀᴏ ᴍᴜsɪᴄ ʙᴏᴛ ʜᴀs sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 🌸✨\n"
+        "[bold green]Congrats Music Bot has Started Successfuly🌸✨\n"
     )
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>ᴄᴏɴɢʀᴀᴛs ᴍᴜsɪᴄ ʙᴏᴛ ʜᴀs sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 🌸✨</b>",
+            "<b> Congrats Music Bot has Started Successfuly🌸✨</b>",
         )
     except Exception as e:
         print(
-            "\nʙᴏᴛ ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ ᴄʜᴀɴɴᴇʟ. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ❗"
+            "\nBot Has Failed to access the log Channel. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ❗"
         )
         console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
         return
     a = await app.get_chat_member(LOG_GROUP_ID, BOT_ID)
     if a.status != "administrator":
-        print("ᴘʀᴏᴍᴏᴛᴇ ʙᴏᴛ ᴀs ᴀᴅᴍɪɴ ɪɴ ʟᴏɢɢᴇʀ ᴄʜᴀɴɴᴇʟ")
+        print("Pʀᴏᴍᴏᴛᴇ Bᴏᴛ ᴀs ᴀᴅᴍɪɴ ɪɴ ʟᴏɢɢᴇʀ ᴄʜᴀɴɴᴇʟ")
         console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
         return
-    console.print(f"\n┌[red] ʙᴏᴛ sᴛᴀʀᴛᴇᴅ ᴀs {BOT_NAME}")
-    console.print(f"├[green] ɪᴅ :- {BOT_ID}")
+    console.print(f"\n┌[red] Bᴏᴛ Sᴛᴀʀᴛᴇᴅ As {BOT_NAME}")
+    console.print(f"├[green] ID :- {BOT_ID}")
     if STRING1 != "None":
         try:
             await ASS_CLI_1.send_message(
                 LOG_GROUP_ID,
-                "<b>ᴄᴏɴɢʀᴀᴛs ᴀssɪsᴛᴀɴᴛ ᴄʟɪᴇɴᴛ 𝟷 ʜᴀs sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 🌸✨</b>",
+                "<b>Congrats Assistant client 1 Has Stared Successfully 🌸✨</b>",
             )
         except Exception as e:
             print(
