@@ -34,7 +34,7 @@ __HELP__ = """
 - Start the Bot.
 
 
-/help 
+/elp 
 - Get Commands Helper Menu.
 
 
@@ -93,7 +93,7 @@ async def welcome(_, message: Message):
             return
 
 
-@app.on_message(filters.command(["help", "start"]) & filters.group)
+@app.on_message(filters.command(["elp", "start"]) & filters.group)
 async def useradd(_, message: Message):
     out = start_pannel()
     await asyncio.gather(
