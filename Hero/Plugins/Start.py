@@ -78,6 +78,41 @@ async def welcome(_, message: Message):
             return
 
 
+@app.on_message(filters.command("start") & filters.private & ~filters.edited)
+async def useradd(_, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/4cee546f83f7a9573d329.jpg",
+        caption=f"""**
+📶 Hᴇʟʟᴏ, ɪ ᴀᴍ Bʟᴀᴢᴇ Sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ Mᴜsɪᴄ Pʟᴀʏᴇʀ Pᴏᴡᴇʀᴇᴅ Bʏ [✳️ Official AFK ✳️](https://t.me/OFFICIAL_AFK_XD)
+Click help Commands Button /help ...""",
+   reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🌀 Add Me To Your Group 🌀",
+                        url=f"https://t.me/HYPERMEN_RBOT?startgroup=true",
+                    )
+                ],
+                [            
+                 InlineKeyboardButton  ("🛠️ Help & Cmd ⚒️", callback_data="help_back"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🚑 Support", url=f"https://t.me/BLAZE_Support"
+                    ),
+                    InlineKeyboardButton(
+                        "Updates 📢", url=f"https://t.me/THE_BLAZE_NETWORK"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "✳️ ChatZone ✳️", url=f"https://t.me/UNIQUE_SOCIETY")
+                ]
+                
+           ]
+        ),
+    )  
+
 @app.on_message(filters.command(["elp", "start"]) & filters.group)
 async def useradd(_, message: Message):
     out = start_pannel()
