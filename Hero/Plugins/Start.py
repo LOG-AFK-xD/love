@@ -110,7 +110,7 @@ async def useradd(_, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/4cee546f83f7a9573d329.jpg",
         caption=f"""**
-📶 Hᴇʟʟᴏ, ɪ ᴀᴍ Bʟᴀᴢᴇ Sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ Mᴜsɪᴄ Pʟᴀʏᴇʀ Pᴏᴡᴇʀᴇᴅ Bʏ [✳️ Official AFK ✳️](https://t.me/OFFICIAL-AFK-XD)
+📶 Hᴇʟʟᴏ, ɪ ᴀᴍ Bʟᴀᴢᴇ Sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ Mᴜsɪᴄ Pʟᴀʏᴇʀ Pᴏᴡᴇʀᴇᴅ Bʏ [✳️ Official AFK ✳️](https://t.me/OFFICIAL_AFK_XD)
 Click help Commands Button /help ...""",
    reply_markup=InlineKeyboardMarkup(
             [
