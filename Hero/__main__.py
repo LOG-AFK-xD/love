@@ -233,10 +233,10 @@ home_text_pm = f"""ʜᴇʟʟᴏ ,
 ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
 ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ+ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
 
-ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: / """
+ᴀʟʟ  ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: / """
 
 
-@app.on_message(filters.command("afk") & filters.private)
+@app.on_message(filters.command("elp") & filters.private)
 async def help_command(_, message):
     text, keyboard = await help_parser(message.from_user.mention)
     await app.send_message(message.chat.id, text, reply_markup=keyboard)
@@ -289,7 +289,7 @@ async def start_command(_, message):
                     LOG_GROUP_ID,
                     f"{message.from_user.mention} ʜᴀs ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <code>sᴜᴅᴏʟɪsᴛ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀ ɴᴀᴍᴇ:** {sender_name}",
                 )
-        if name == "help":
+        if name == "elp":
             text, keyboard = await help_parser(message.from_user.mention)
             await message.delete()
             return await app.send_text(
@@ -390,7 +390,7 @@ async def shikhar(_, CallbackQuery):
     await CallbackQuery.message.edit(text, reply_markup=keyboard)
 
 
-@app.on_callback_query(filters.regex(r"help_(.*?)"))
+@app.on_callback_query(filters.regex(r"elp_(.*?)"))
 async def help_button(client, query):
     home_match = re.match(r"help_home\((.+?)\)", query.data)
     mod_match = re.match(r"help_module\((.+?)\)", query.data)
@@ -416,7 +416,7 @@ async def help_button(client, query):
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ ʙᴀᴄᴋ", callback_data="help_back"
+                        text="↪️ ʙᴀᴄᴋ", callback_data="elp_back"
                     ),
                     InlineKeyboardButton(
                         text="🔄 ᴄʟᴏsᴇ", callback_data="close"
