@@ -11,7 +11,7 @@ from Hero import SUDOERS, app, random_assistant
 from Hero.Database import get_assistant, save_assistant
 from Hero.Utilities.assistant import get_assistant_details
 
-__MODULE__ = "ᴀssɪsᴛᴀɴᴛ"
+__MODULE__ = "Assistant"
 __HELP__ = f"""
 
 
